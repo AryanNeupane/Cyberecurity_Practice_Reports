@@ -17,21 +17,22 @@ The Windows Server 2022 instance was configured to log all authentication attemp
 
 ### 2.1 Local Log Monitoring
 Initially, Event Viewer was used to monitor standard system and authentication events prior to any malicious activity.
+![alt text](<Screenshots/Screenshot (1).png>)
 
-!Screenshots/Screenshot (1).png
 
 ---
 
 ### 2.2 Brute-Force Execution
 A high-frequency brute-force attack was launched from Kali Linux, generating a large volume of authentication attempts against the Windows Server target.
 
-![Image 2: Kali Linux Brute-force Terminal Output]Screenshots/Screenshot (2).png
+![alt text](<Screenshots/Screenshot (2).png>)
 
 ---
 
 ## 3. Phase 2: Log Analysis & Detection
 
 After executing the attack, analysis focused on identifying forensic evidence within the Windows logs.
+![alt text](<Screenshots/Screenshot (3).png>)
 
 ### 3.1 Event Identification
 The Windows Security logs recorded multiple **"Audit Failure"** events (Event ID 4625). These entries included critical details such as:
@@ -39,20 +40,21 @@ The Windows Security logs recorded multiple **"Audit Failure"** events (Event ID
 - Attempted usernames
 - Logon types and failure reasons
 
-![Image 3: Detailed View of Event ID 4625]Screenshots/Screenshot (3).png
+![alt text](<Screenshots/Screenshot (5).png>)
 
 ---
 
 ### 3.2 Splunk Ingestion
 Using the **Splunk Universal Forwarder**, Windows Security logs were forwarded and indexed in Splunk. The logs were successfully ingested and made searchable within the Splunk interface.
 
-![Image 4: Splunk Search Interface - Security Events]Screenshots/Screenshot (5).png
+![alt text](<Screenshots/Screenshot (6).png>)
 
 ---
 
 ## 4. Phase 3: SPL & Data Visualization
 
 To efficiently analyze thousands of failed login attempts, **Search Processing Language (SPL)** was used to aggregate and interpret the data.
+![alt text](<Screenshots/Screenshot (7).png>)
 
 ### 4.1 Practicing SPL Queries
 Custom SPL queries were developed to:
@@ -60,18 +62,15 @@ Custom SPL queries were developed to:
 - Identify the attacker's IP address
 - Detect patterns and anomalies in authentication behavior
 
-![Image 5: SPL Query for Failed Logins]Screenshots/Screenshot (6).png 
-![Image 6: SPL Query for Top Targeted Accounts]Screenshots/Screenshot (7).png
-
+![alt text](<Screenshots/Screenshot (8).png>)
+![alt text](<Screenshots/Screenshot (9).png>)
 ---
 
 ### 4.2 Security Dashboards
 Dashboards were created in Splunk to visualize attack patterns and trends, providing a centralized view ("single pane of glass") for monitoring security events.
 
-![Image 7: Dashboard Visualization - Attack Trends]Screenshots/Screenshot (8).png 
-![Image 8: Dashboard Visualization - Attack Statistics]Screenshots/Screenshot (9).png
-!Screenshots/Screenshot (10).png
-!Screenshots/Screenshot (11).png
+![alt text](<Screenshots/Screenshot (10).png>)
+![alt text](<Screenshots/Screenshot (11).png>)
 
 ---
 

@@ -34,7 +34,7 @@ I also plotted everything on a **5×5 Heat Map**. The honest truth is I struggle
 The rows are Likelihood (5 = most likely, top), columns are Impact (1 = least impact, left → 5 = most impact, right). Each cell shows which risk(s) sit there.
 
 ```
-Screenshots/Screenshot (23).png
+![alt text](<Screenshots/Screenshot (23).png>)
 
 ```
 

@@ -85,8 +85,5 @@ With shell access established, I checked my privileges and confirmed that I was 
 THM{R3v3rs3_Sh3ll_L0v3_C0nn3ct10ns}
 ```
 
-<div align="center">
-  <img width="918" height="643" alt="image" src="https://github.com/user-attachments/assets/2ea1195b-8b33-41df-b172-9b04c2164702" />
-</div>
 
 This room was a fast-paced challenge that focused on quick interaction and exploitation. The flow from identifying functionality to gaining shell access was straightforward but required attention to detail.

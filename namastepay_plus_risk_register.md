@@ -1,6 +1,5 @@
 # Mapping the Chaos: A Risk Register for a Nepali FinTech Startup
 
-*A student GRC exercise using a hypothetical startup called NamastePay*
 
 ---
 
@@ -206,8 +205,4 @@ A few honest reflections:
 
 ---
 
-*This is a student exercise based on publicly available NRB Cyber Resilience Guidelines. NamastePay is entirely hypothetical. I'd love feedback from anyone working in FinTech security or GRC in Nepal — what did I miss?*
 
----
-
-*#cybersecurity #GRC #Nepal #FinTech #NRB #riskmanagement #learnInPublic*
